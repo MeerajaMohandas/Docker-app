@@ -1,8 +1,8 @@
 version: '3.8'
 services:
   vprodb:
-    build:
-      context: ./Docker-files/db
+    build: .
+      
     image: devopsmeeraja/vprofiledb
     container_name: vprodb
     ports:
