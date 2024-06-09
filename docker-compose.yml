@@ -28,8 +28,8 @@ services:
 
        
   vproapp:
-    build:
-      context: ./Docker-files/app
+    build: .
+      
     image: devopsmeeraja/vprofileapp
     container_name: vproapp
     ports:
@@ -39,8 +39,8 @@ services:
     
 
   vproweb:
-    build:
-      context: ./Docker-files/web
+    build: .
+      
     image: devopsmeeraja/vprofileweb
     container_name: vproweb
     ports:
